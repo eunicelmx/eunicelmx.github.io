@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/mobile_tablet.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/index.js" defer></script>
+    <title>Eunice Lee</title>
+</head>
+<body>
+    <div id="body-wrapper">
+
+        <!-- <div id="mouse-wrapper">
+            <section id="mouse-effect"></section>
+        </div> -->
+        <div id="clouds">
+            <img id="first-cloud" src="./assets/cloud.png" alt="">
+            <img id="second-cloud" src="./assets/cloud.png" alt="">
+        </div>
+        <div id="background">
+            <div id="mouse-wrapper">
+                <div id="def-box"></div>
+        
+                <div id="testing-wrapper">
+                </div>
+            </div>
+            <section id="portfolio">
+
+                <div id="menu-wrapper">
+                    <div id="logo">
+                       <img class="hover-effect mobile-cursor-pointer" src="./assets/logo.png" alt="logo">
+                    </div>
+                    <div id="menu-icons" class="hidden hover-effect mobile-cursor-pointer">
+                        <img id="menu" src="./assets/menu-icon.png" alt="">
+                        <img id="menu-close" src="./assets/menu-close.png" class="hidden" alt="">
+                    </div>
+
+                    <!-- <div id="menu-wrapper"> -->
+                        
+                    <div id="menu-links">
+                        <a id="menu-about" class="underline links hover-effect mobile-cursor-pointer" href="#about">ABOUT</a>
+                        <a id="menu-skills" class="links hover-effect mobile-cursor-pointer" href="#skills">SKILLS</a>
+                        <a id="menu-projects" class="links hover-effect mobile-cursor-pointer" href="#projects">PROJECTS</a>
+                        <a id="menu-contact" class="links hover-effect mobile-cursor-pointer" href="#contact">CONTACT</a>
+                    </div>
+                        
+                    <!-- </div> -->
+                    
+                </div>
+                <div id="content-container-wrapper">
+                    <!-- <div id="content-container-background"> -->
+                        <section id="content-container" class="radial-gradient">
+                            <section id="about" class="contents">
+                                <div id="about-container">
+                                    <div id="about-wrapper">
+                                        <!-- <div id="about-me"> -->
+                                            <!--About me-->
+                                            <div id="about-details-one">
+                                                <p id="greet" class="line-1 anim-typewriter">
+                                                    Hi there, I'm 
+                                                </p>
+                                                <p id="inc" class="line-2 anim-typewriter">Eunice Lee</p>
+                                            </div>
+                                        <!-- </div> -->
+                                        <div id="about-details-two">
+                                            <p class="fade">Welcome to my personal website</p>
+                                            <p class="fade">I am currently self-learning web design :)</p>
+                                        </div>
+                                        <a href="" class="btn fade hover-effect mobile-cursor-pointer">Resume</a>
+                                    </div>
+                                    <div id="profile-pic">
+                                        <img  src="./assets/profile.png" alt="">
+                                    </div>
+                                </div>
+                                
+                
+                                
+                                <div class="container-child header right up-down-btns">
+                                    <a href="#skills" class="down no-deco hover-effect">></a>
+                                </div>
+                            </section>
+                            <section id="skills" class="contents">
+                                <div id="skills-wrapper" class="container-child header">
+                                    <div class="header">
+                                        <h2>SKILLS</h2>
+                                        <div class="border"></div>
+                                    </div>
+                                    <p>Here are some of the tools that I have used over the years:</p>
+                                    <div id="different-skills">
+                                        <div id="scripting">
+                                            <h3>Scripting</h3>
+                                            <div id="scripting-wrapper">
+                                                <div class="skills"><img class="circle" src="./assets/html.png" alt="html"></div>
+                                                <div class="skills"><img class="circle" src="./assets/css.png" alt="css"></div>
+                                                <div class="skills"><img class="circle" src="./assets/js.png" alt="js"></div>
+                                                <div class="skills"><img class="circle" src="./assets/jquery.png" alt="jquery"></div>
+                                                <div class="skills"><img class="circle" src="./assets/react.png" alt="react"></div>
+                                                <div class="skills"><img class="circle" src="./assets/typescript.png" alt="typescript"></div>
+                                            </div>  
+                                        </div>
+                                        <div id="language">
+                                            <h3>Language</h3>
+                                            <div id="language-wrapper">
+                                                <div class="skills"><img class="circle" src="./assets/python.png" alt="python"></div>
+                                                <div class="skills"><img class="circle" src="./assets/java.png" alt="java"></div>
+                                                <div class="skills"><img class="circle" src="./assets/golang.png" alt="golang"></div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="test" class="container-child right up-down-btns">
+                                    <a href="#about" class="up no-deco hover-effect">></a>
+                                    <a href="#projects" class="down no-deco hover-effect">></a>
+                                </div>
+                            </section>
+                            <section id="projects" class="contents">
+                                <!-- <div id="projects-wrapper" class="container-child left"> -->
+                                    <div id="project-container-wrapper">
+                                        <h2>PROJECTS</h2>
+                                        <div id="project-container">
+                                            <div id="project-img" class="hover-effect mobile-cursor-pointer">
+                                                <img src="./assets/calendar.jpg" alt="">
+                                                <!-- <div id="img-overlay" class="hidden"> -->
+                                                    <span id="toggle-modal-onclick">Click image to view more</span>
+                
+                                                <!-- </div> -->
+                                            </div>
+                                            <div id="project-desc">
+                                                <h3>Event Calendar</h3>
+                                                <p>I started this mini project serves as a refresher for basic web development.</p>
+                                                <p>This calendar is created using pure html, css and js.</p>
+                                                <p>I have always had some difficulties in keeping track of my tasks for personal projects, 
+                                                    due to certain features that I thought would be a nice addition to have while implementing
+                                                    my projects </p>
+                                                
+                                                <p>It first started out as a simple todo list to ensure that I complete the tasks for the day.</p>
+                                                <p>Followed by thinking it would be nice to have a calendar to note down events/tasks for different days</p>
+                                                <p>This led to me creating an event calendar to keep myself updated and notified </p>
+                                            </div>
+                                        </div>
+                                        <div class="container-child header right up-down-btns">
+                                            <a href="#skills" class="up no-deco hover-effect">></a>
+                                            <a href="#contact" class="down no-deco hover-effect">></a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div id="modal" class="hidden">
+                                        <!-- <img  id="close-modal" class="circle" src="./assets/menu-close.png" alt=""> -->
+                                        <div  id="close-modal" class="circle hover-effect mobile-cursor-pointer">
+                                            <p>x</p>
+                                        </div>
+                                        <div id="main-content-container" class="hover-effect mobile-cursor-pointer">
+                                            <p id="modal-title">Video</p>
+                                            <video id="demo-video" src="./assets/demo_video.mp4" controls></video>
+                                            <div id="modal-img-container"></div>
+                                        </div>
+                                        <p id="modal-desc">Demo Video</p>
+                                        <!-- <img id="main-content" src="./assets/sunset.gif" alt=""> -->
+                                        <div id="img-container">
+                                            <img class="modal-imgs selected" src="./assets/calendar.jpg" alt="">
+                                            <img class="modal-imgs" src="./assets/email.png" alt="">
+                                            <img class="modal-imgs" src="./assets/books.png" alt="">
+                                            <img class="modal-imgs" src="./assets/books.png" alt="">
+                                            <img class="modal-imgs" src="./assets/books.png" alt="">
+                                            <img class="modal-imgs" src="./assets/books.png" alt="">
+                                            <img class="modal-imgs" src="./assets/books.png" alt="">
+                                            <img class="modal-imgs" src="./assets/books.png" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    <!--TODO: add video png image -->
+                                <!-- </div> -->
+                                <!-- <div class="container-child header right up-down-btns">
+                                    <a href="#skills" class="up no-deco">></a>
+                                    <a href="#contact" class="down no-deco">></a>
+                                </div> -->
+                            </section>
+                            <section id="contact" class="contents">
+                                <div id="contact-wrapper" class="container-child left">
+                                    <h2>CONTACTS</h2>
+                                    <p>Always welcome to contact me at</p>
+                                    <a href="mailto:euniceleemx30@gmail.com" class="contact-link hover-effect">
+                                            <div id="email-container" class="mobile-cursor-pointer">
+                                            <img src="./assets/email.png" alt="mail">
+                                            <div id="email">
+                                                <p>Email:</p>
+                                                <p class="contact-details">euniceleemx30@gmail.com</p>
+                                                <!-- <a href="mailto:euniceleemx30@gmail.com">euniceleemx30@gmail.com</a> -->
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="mailto:euniceleemx30@gmail.com" class="contact-link hover-effect">
+                                        <div id="github-container" class="mobile-cursor-pointer">
+                                            <img src="./assets/github.png" alt="github">
+                                            <div id="github">
+                                                <p>Github:</p>
+                                                <p class="contact-details">github.io/eunicelee</p>
+                                                <!-- <a href="mailto:euniceleemx30@gmail.com">github.io/eunicelee</a> -->
+                                            </div>
+                                            
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="container-child header right up-down-btns">
+                                    <a href="#projects" class="up no-deco hover-effect">></a>
+                                </div>
+                            </section>
+                        </section>
+                    <!-- </div> -->
+                </div>
+                <footer>Designed by Eunice Lee</footer>
+               
+            </section>
+            <!-- <footer>Designed by Eunice Lee</footer> -->
+    
+        </div>
+        
+    </div>
+    
+</body>
+</html>

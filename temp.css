@@ -1,0 +1,27 @@
+
+#content-container {
+    /* width: 80%; */
+    width: 100%;
+    height: 550px;
+    /* width: 100%; */
+    /* position: relative; */
+    /* width: calc(100% -10px); */
+    /* height: calc(100% - 20px); */
+    /* position: absolute;
+    top: 5px; */
+    /* top: 90px;
+    left: 0; 
+    right: 0;  */
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    /* inset: 5px 10px; */
+
+    /* border: 5px solid white; */
+    /* position: absolute; */
+    cursor: auto;
+    /* z-index: 1; */
+    background-color: black;
+    /* background: radial-gradient( at center, #ff6e7f69, rgba(31, 52, 71, 0.587)); */
+
+}

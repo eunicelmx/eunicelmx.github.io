@@ -1,0 +1,109 @@
+@media screen and (max-width: 468px) {
+    /* :root {
+        --minW: 468px;
+
+    } */
+    * {
+        cursor: auto;
+    }
+
+    /**
+        DEFAULT SETTINGS
+    */
+    .up-down-btns {
+        display: none;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .mobile-cursor-pointer {
+        cursor: pointer;
+    }
+
+    /**
+        BACKGROUND WRAPPER
+    */
+    #background {
+        width: 100%;
+        height: auto;
+        background: url(../assets/background_scenery.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        z-index: 2;
+        position: relative;
+    }
+
+    /**
+        MOUSE WRAPPER
+    */
+    #mouse-wrapper {
+        display: none;
+    }
+
+    /**
+        CONTENT CONTAINER
+    */
+    #content-container-wrapper {
+        position: relative;
+        border: none;
+        box-shadow: none;
+        border-radius: 0px;
+        width: 100%;
+        height: auto;
+        background: transparent;
+        overflow: auto;
+    }
+
+    #content-container {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        overflow: auto;
+        background: none;
+        /* background-color: none; */
+    }
+
+    /**
+        CONTENTS IN CONTENT CONTAINER
+    */
+    #about, #skills, #projects {
+        margin: auto;
+        padding: 20px 0;
+        /* margin: 20px auto 0px auto;
+        padding-bottom: 20px; */
+        border-bottom: 2px dashed white;
+    }
+
+    /**
+        SKILLS CONTAINER
+    */
+    #different-skills {
+        overflow: hidden;
+    }
+
+    #different-skills:hover {
+        overflow: scroll;
+    }
+
+    /**
+        PROJECTS CONTAINER
+    */
+    #project-container {
+        position: relative;
+        overflow: hidden;
+        transition: 1s;
+    }
+    #project-container:hover {
+        overflow: scroll;
+    }
+    #modal {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        /* display: block; */
+
+    }
+}
