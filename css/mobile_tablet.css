@@ -166,6 +166,14 @@
     }
 
     /**
+        PROJECTS
+    */
+    #close-modal {
+        width: 30px;
+        height: 30px;
+    }
+
+    /**
         CONTACTS
     */
     /* #contact {
