@@ -102,7 +102,7 @@ logo.addEventListener("click", (e) => {
 
 projImg.addEventListener("click", (e) => {
   if(window.innerWidth <= 468) {
-    // projectContainerWrapper.classList.add("hidden");
+    projectContainerWrapper.classList.add("hidden");
     modal.classList.remove("hidden");
     // modal.style.display = "block";
   } else {
