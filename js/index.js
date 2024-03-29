@@ -89,6 +89,7 @@ window.addEventListener('resize', (e) => {
     // menuLinks.classList.remove("hidden")
     // menuIcons.classList.add("hidden")
   }
+  scrollTo(window.location.hash);
   // width = window.innerWidth;
 });
 

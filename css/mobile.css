@@ -10,9 +10,7 @@
     /**
         DEFAULT SETTINGS
     */
-    .up-down-btns {
-        display: none;
-    }
+    
 
     body {
         width: 100%;
@@ -23,17 +21,38 @@
     }
 
     /**
+        UP DOWN BUTTONS
+    */
+    .up-down-btns {
+        position: absolute;
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        right: 0;
+        bottom: 0;
+        /* display: none; */
+    }
+
+    /* .up {
+        position: absolute;
+        margin: auto;
+        top: 0;
+    } */
+
+
+    /**
         BACKGROUND WRAPPER
     */
     #background {
         width: 100%;
-        height: auto;
+        /* height: auto; */
         background: url(../assets/background_scenery.png);
         background-size: 100% auto;
         background-repeat: no-repeat;
         background-position: bottom;
         z-index: 2;
         position: relative;
+        overflow: auto;
     }
 
     /**
@@ -52,18 +71,14 @@
         box-shadow: none;
         border-radius: 0px;
         width: 100%;
-        height: auto;
+        /* height: 500px; */
+        margin: 20px auto;
         background: transparent;
-        overflow: auto;
+        /* overflow: auto; */
     }
 
     #content-container {
         width: 100%;
-        height: auto;
-        margin: auto;
-        overflow: auto;
-        background: none;
-        /* background-color: none; */
     }
 
     /**
@@ -71,11 +86,20 @@
     */
     #about, #skills, #projects {
         margin: auto;
-        padding: 20px 0;
+        /* padding: 20px 0; */
         /* margin: 20px auto 0px auto;
         padding-bottom: 20px; */
         border-bottom: 2px dashed white;
     }
+
+    /**
+        ABOUT CONTAINER
+    */
+    #about-details-one #greet, #about-details-one #inc, #about-details-two p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
 
     /**
         SKILLS CONTAINER
@@ -86,6 +110,11 @@
 
     #different-skills:hover {
         overflow: scroll;
+    }
+
+    #skills img {
+        width: 50px;
+        height: 50px;
     }
 
     /**
