@@ -101,7 +101,6 @@ logo.addEventListener("click", (e) => {
 })
 
 projImg.addEventListener("click", (e) => {
-  // console.log("ksfksdfh")
   if(window.innerWidth <= 468) {
     // projectContainerWrapper.classList.add("hidden");
     modal.classList.remove("hidden");
@@ -194,7 +193,6 @@ function addImgListener() {
         modalImgs[currImgIdx].classList.remove("selected");
         modalImgs[i].classList.add("selected");
         currImgIdx = i;
-        console.log("welcomeeee")
       } else {
         if(currImgIdx != i) {
           resetModal();
@@ -216,13 +214,11 @@ function addImgListener() {
 }
 
 function scrollTo(url) {
-  console.log(url)
   let urlArr = url.split("#");
   let target = urlArr[1];
   let str = "#" + target;
   let page = document.getElementById(target);
   let anchor = document.getElementById("menu-" + target);
-  console.log(target)
   prevAnchor.classList.remove("underline");
   prevAnchor = anchor;
   prevAnchor.classList.add("underline");
@@ -241,7 +237,6 @@ function anchorsListener() {
       }
       if(!anchors[i].classList.contains("contact-link") && window.innerWidth > mobileWidth){
         e.preventDefault();
-        console.log("e.target.href", e.target.href)
         scrollTo(e.target.href);
       }
       
@@ -280,15 +275,12 @@ let mouseEffects = (e) => {
 	parent_div.style.top = (e.clientY -10)+'px';
   defbox.style.left = (e.clientX - 10)+'px';
 	defbox.style.top = (e.clientY -10)+'px';
-
-  console.log("x value" + e.clientX + "y value" + e.clientY);
   // if(pX < e.clientX) {
   //     defbox.style.setProperty("--w", (e.clientX - pX)+ "px");
   //     pX = e.clientX;
   // }
   // when mouse is moving set the hollow circle be the mouse
   inner_div.onanimationend = () => {
-    console.log("hihi")
     testingWrapper.removeChild(parent_div)
   }
 	if(document.getElementsByClassName('loader-container').length > 20) {
@@ -305,9 +297,8 @@ let toggleDefbox = (val) => {
   }
 }
 
-window.addEventListener('scroll', (e) => {
-  console.log("event");
-})
+// window.addEventListener('scroll', (e) => {
+// })
 
 bodyWrapper.addEventListener("mousedown", (e) => {
   toggleDefbox(true);
