@@ -224,21 +224,32 @@ function scrollTo(url) {
   prevAnchor.classList.add("underline");
   // page.scrollIntoView({behavior: 'smooth'});
   page.scrollIntoView({ behavior: "smooth", block: "end" });//, inline: "center"
+  
+  // TODO: check this window url
   window.history.replaceState({}, document.title, str);
 }
 function anchorsListener() {
   for(let i = 0; i<anchors.length; i++) {
     anchors[i].addEventListener("click", (e) => {
+      console.log("anchors[i]", anchors[i]);
       if((anchors[i].classList.contains("links") || anchors[i].classList.contains("no-deco")) 
           && window.innerWidth < width) {//860
         isExpanded = false;
         resetMenu()
         // menuLinks.classList.add("hidden");
       }
-      if(!anchors[i].classList.contains("contact-link") && window.innerWidth > mobileWidth){
-        e.preventDefault();
-        scrollTo(e.target.href);
-      }
+      // if(window.innerWidth > mobileWidth) {
+        // for navigating through the website with anchors href linking to id
+        // exclude contact link and resume link
+        if(!anchors[i].classList.contains("contact-link") && !anchors[i].classList.contains("resume")) {
+          e.preventDefault();
+          scrollTo(e.target.href);
+        }
+      // }
+      // if(!anchors[i].classList.contains("contact-link") && window.innerWidth > mobileWidth){
+      //   e.preventDefault();
+      //   scrollTo(e.target.href);
+      // }
       
     })
   }
