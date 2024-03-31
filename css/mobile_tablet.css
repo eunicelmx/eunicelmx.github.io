@@ -136,7 +136,7 @@
     }
 
     #about-details-one #inc {
-        font-size: 40px;
+        font-size: 20px;
     }
 
     #about-details-two p {
@@ -144,6 +144,7 @@
     }
 
     #profile-pic {
+        border-radius: 25px;
         width: 170px;
         margin: 0 10px;
         height: 150px;
@@ -152,6 +153,11 @@
         width: 150px;
         height: auto;
     }
+
+    #about-details-one #greet, #about-details-one #inc, #about-details-two p {
+        line-height: 30px;
+    }
+
 
     /**
         SKILLS
